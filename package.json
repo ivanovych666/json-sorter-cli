@@ -1,7 +1,7 @@
 {
   "name": "json-sorter-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI for json-sorter-lib.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -38,6 +38,7 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "commander": "^9.1.0",
     "json-sorter-lib": "file:../json-sorter"
   }
 }
