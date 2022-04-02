@@ -1,0 +1,13 @@
+{
+    "roots": [
+        "src",
+        "test"
+    ],
+    "transform": {
+        ".ts$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+        "src/**/*.ts"
+    ],
+    "coverageDirectory": "../coverage"
+}
