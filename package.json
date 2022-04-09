@@ -11,7 +11,6 @@
     "prebuild": "rm -rf ./dist/*",
     "build": "tsc --build",
     "postbuild": "node ./bin/postbuild.js",
-    "publish": "npm publish",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest"
   },
@@ -26,6 +25,7 @@
   },
   "homepage": "https://github.com/ivanovych666/json-sorter-cli#readme",
   "devDependencies": {
+    "@types/glob": "^7.2.0",
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
@@ -40,6 +40,10 @@
   },
   "dependencies": {
     "commander": "^9.1.0",
-    "json-sorter-lib": "file:../json-sorter"
+    "glob": "^7.2.0",
+    "json-sorter-lib": "^0.0.4"
+  },
+  "bin": {
+    "json-sorter": "./dist/index.js"
   }
 }

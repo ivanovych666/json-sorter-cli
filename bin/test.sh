@@ -7,4 +7,5 @@ cp test/src/* test/dist/
 
 node dist/ -V
 node dist/ --help
-node dist/ test/dist/1.json test/dist/2.json -ci -r -n
+node dist/ test/dist/**/*.* -ci -r -n -v
+node dist/ test/dist/*.json -ci -r -n
