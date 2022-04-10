@@ -41,7 +41,7 @@
   "dependencies": {
     "commander": "^9.1.0",
     "glob": "^7.2.0",
-    "json-sorter-lib": "^0.0.6"
+    "json-sorter-lib": "^0.0.8"
   },
   "bin": {
     "json-sorter": "./dist/index.js"
